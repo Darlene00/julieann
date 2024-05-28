@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact Me</title>
+
+    <style>
+        .header {
+            padding: 32px;
+            border-bottom: 4px solid black;
+        }
+
+        /* Main Section (Contact Form) */
+        .section {
+            padding: 50px 0;
+        }
+
+        .container {
+            max-width: 90%;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .container h2 {
+            font-size: 24px;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .contactInfo {
+            text-align: center;
+        }
+
+        .contactInfo ul.info {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .contactInfo ul.info li {
+            margin-right: 20px;
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .contactInfo ul.info li:hover {
+            transform: scale(1.05);
+            background-color: #f0f0f0; /* Add a slight background change on hover */
+            border-radius: 8px;
+        }
+
+        .contactInfo ul.info li span {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 10px;
+        }
+
+        .contactInfo ul.info li span img {
+            max-width: 24px;
+            height: auto;
+            margin-right: 5px;
+            transition: filter 0.3s ease;
+        }
+
+        .contactInfo ul.info li span img:hover {
+            filter: brightness(1.2); /* Slightly brighten the image on hover */
+        }
+
+        .contactInfo ul.info li a {
+            text-decoration: underline; /* Ensure the link is always underlined */
+            color: inherit; /* Inherit color from parent */
+            transition: color 0.3s ease;
+        }
+
+        .contactInfo ul.info li a:hover {
+            color: #007BFF; /* Change text color on hover */
+        }
+
+        .contactForm {
+            margin-top: 40px;
+        }
+
+        .contactForm .formBox {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .contactForm .formBox .inputBox {
+            flex: 1 1 45%;
+            margin-bottom: 20px;
+        }
+
+        .contactForm .formBox .inputBox.w100 {
+            flex: 1 1 100%;
+        }
+
+        .contactForm .formBox .inputBox input,
+        .contactForm .formBox .inputBox textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        .contactForm .formBox .inputBox input[type="submit"] {
+            background-color: #D8AE7E;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contactForm .formBox .inputBox input[type="submit"]:hover {
+            background-color: #756AB6;
+        }
+
+    </style>
+
+</head>
+<body>
+    <nav>
+        <div class="nav__content">
+            <div class="logo"><a href="contact.html">Welcome</a></div>
+            <label for="check" class="checkbox">
+                <i class="ri-menu-line"></i>
+            </label>
+            <input type="checkbox" id="check" />
+            <ul>
+                <li><a href="index.html">About Me</a></li>
+                <li><a href="attributes.html">Favorites</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Me</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header"></header>
+
+    <section class="section">
+        <div class="container">
+            <h2>Contact Info</h2><br>
+
+            <div class="contactInfo">
+                <ul class="info">
+                    <li>
+                        <span><img src="images/mail.png" alt="Email Icon"></span>
+                        <span><a href="https://mail.google.com/mail/?view=cm&fs=1&to=julieannsumipat30@gmail.com" target="_blank">julieannsumipat30@gmail.com</a></span>
+                    </li>
+
+                    <li>
+                        <span><img src="images/call.png"></span>
+                        <span>09703756166</span>
+                    </li>
+
+                    <li>
+                        <span><img src="images/1.png" ></span>
+                        <span><a href="https://www.facebook.com/profile.php?id=6155145045067/">Julie Ann Sumipat</a></span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="contactForm">
+                <h3>Send a Message</h3>
+                <div class="formBox">
+                    <div class="inputBox w50">
+                        <div class=" justify-content">
+                    </div>
+                    <div class="inputBox w100">
+                        <textarea required></textarea>
+                    </div>
+                   <div class="inputBox w100"><a href="https://mail.google.com/mail/?view=cm&fs=1&to=marjoriesalasayo28@gmail.com">
+                        <input type="submit" value="Send">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
